@@ -1,0 +1,23 @@
+// WAP to print mid values of a given array//
+
+import java.util.Scanner;
+public class Mid {
+  public static void main(String args[])
+  {
+    Scanner s = new Scanner(System.in);
+    System.out.println("Enter how many values");
+    int n = s.nextInt();
+    int arr[] = new int[n];
+    System.out.println("Enter the values");
+    for(int i=n; i<n; i++) {
+      arr[i] = s.nextInt();
+    }
+    if(n%2!=0) 
+    {
+      System.out.println("Mid value of an given array:" +arr[n/2]);
+    }
+    else {
+      System.out.println("mid values of given array:" +arr[(n/2)-1] + "&" +arr[n/2]);
+    }
+  }
+}
