@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Frequency{
+   public static void main(String[] args){
+ 
+    int[] arr={1,2,2,2,3,4,9,6,8,6};
+     int[] visted=new int[10];
+     int count=1;
+     for(int i=0;i<arr.length;i++){
+       count=1;      
+       for(int j=i+1;j<arr.length;j++){
+           if(arr[i]==arr[j]){
+             count++;   
+             visted[j]=-1;   
+           }       
+       }
+      if(visted[i]!=-1){    
+         visted[i]=count;
+       }
+     }
+    for(int i=0;i<arr.length;i++){
+      System.out.println(arr[i]+" Frequency "+visted[i]); 
+    }
+   }
+}
