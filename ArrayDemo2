@@ -1,0 +1,24 @@
+// two dimensional array //
+public class ArrayDemo2 {
+  public static void main(String...x) {
+    //Declaring a two dimensional with 3 rows 3 colomnsand initialing it 
+    //Default value of each element is zero until it is initialized
+    //int numbers[][] = new int[3][3];
+
+    //declaring a two dimensional with 3 rows and 3 colomns and initializing it 
+    int numbers[][] = {{1,2,3},{4,5,6},{7,8,9}};
+
+    //looping down the array to print the values.
+    //row loop runs till less than array.length
+    for(int i=0; i<numbers.length; i++) {
+
+      //column loop runs till less then each row length
+      for(int j=0; j<numbers[i].length;j++) {
+
+        System.out.println(numbers[i][j]+ " ");
+      }
+      //new line after each row to show output in matrix format
+      System.out.println();
+    }
+  }
+}
